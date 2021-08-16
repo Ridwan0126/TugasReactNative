@@ -63,24 +63,25 @@ class Home extends Component {
 
   renderData = ({item}) => {
     return (
-      <ListItem.Swipeable
-        leftContent={
-          <Button
-            onPress={() => Alert.alert('Edit')}
-            title="Edit"
-            icon={{name: 'info', color: 'white'}}
-            buttonStyle={{minHeight: '100%'}}
-          />
-        }
-        rightContent={
-          <Button
-            onPress={() => Alert.alert('Delete')}
-            title="Delete"
-            icon={{name: 'delete', color: 'white'}}
-            Style={{minHeight: '100%', backgroundColor: 'red'}}
-          />
-        }
-        bottomDivider={true}>
+      <ListItem
+      // leftContent={
+      //   <Button
+      //     onPress={() => Alert.alert('Edit')}
+      //     title="Edit"
+      //     icon={{name: 'info', color: 'white'}}
+      //     buttonStyle={{minHeight: '100%'}}
+      //   />
+      // }
+      // rightContent={
+      //   <Button
+      //     onPress={() => Alert.alert('Delete')}
+      //     title="Delete"
+      //     icon={{name: 'delete', color: 'white'}}
+      //     Style={{minHeight: '100%', backgroundColor: 'red'}}
+      //   />
+      // }
+      // bottomDivider={true}
+      >
         <Avatar
           titleStyle={{color: 'black'}}
           size="medium"
@@ -90,9 +91,9 @@ class Home extends Component {
         />
         <ListItem.Content>
           <ListItem.Title>{item.first_name}</ListItem.Title>
-          <ListItem.Subtitle>{item.email}</ListItem.Subtitle>
+          <ListItem.Subtitle>{item.phone_number}</ListItem.Subtitle>
         </ListItem.Content>
-      </ListItem.Swipeable>
+      </ListItem>
     );
   };
 

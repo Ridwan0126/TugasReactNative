@@ -233,27 +233,6 @@ const SignInScreen = ({navigation}) => {
                 </Text>
               </LinearGradient>
             </TouchableOpacity>
-
-            {/* <TouchableOpacity
-              onPress={() => navigation.navigate('SignUpScreen')}
-              style={[
-                styles.signIn,
-                {
-                  borderColor: 'grey',
-                  borderWidth: 1,
-                  marginTop: 15,
-                },
-              ]}>
-              <Text
-                style={[
-                  styles.textSign,
-                  {
-                    color: 'grey',
-                  },
-                ]}>
-                Sign Up
-              </Text>
-            </TouchableOpacity> */}
           </View>
         </Animatable.View>
       </View>

@@ -33,10 +33,10 @@ const MainTabScreen = () => (
       //   component={DetailsStackScreen}
       component={ExploreScreen}
       options={{
-        tabBarLabel: 'Updates',
+        tabBarLabel: 'CRUD',
         tabBarColor: '#1f65ff',
         tabBarIcon: ({color}) => (
-          <Icon name="ios-notifications" color={color} size={26} />
+          <Icon name="md-call" color={color} size={26} />
         ),
       }}
     />
